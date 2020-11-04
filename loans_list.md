@@ -21,46 +21,28 @@ GET /loans/list/?api_key=12345678901234567890123456789012'
       "apr": "219.900",
       "skin_in_the_game": 20,
       "loan_schedule": {
-        "schedule": [
-          {
-            "date": "2020-08-06",
-            "rowno": "1",
-            "schedule_components": {
+          "schedule_components": {
               "capital": "principal",
               "interest": "interest",
-              "capitalDebtInterest": "interest"
-            },
-            "capital": 133.26,
-            "interest": 89,
-            "repayment": {
-              "total": 222.26,
-              "repaid": true,
-              "payments": [
-                {
-                  "date": "2020-08-05",
-                  "total": 222.26,
-                  "capital": 133.26,
-                  "interest": 89,
-                  "capitalDebtInterest": 0
-                }
-              ]
-            },
-            "capitalDebtInterest": 0
+              "capitalDebInterest": "interest"
           },
-          {
-            "date": "2020-09-08",
-            "rowno": "2",
-            "capital": 145.12,
-            "interest": 77.14,
-            "schedule_components": {
-            },
-            "repayment": {
-              "total": 0,
-              "repaid": false
-            },
-            "capitalDebtInterest": 0
-          }
-        ]
+          "schedule": [{
+              "rowno": 1,
+              "date": "2020-09-03",
+              "schedule_components": {
+                  "capital": 200.11,
+                  "interest": 2.21,
+                  "capitalDebInterest": 11.01
+              },
+              "repayment": {
+                  "total": 213.33,
+                  "repaid": true,
+                  "payments": [{
+                      "date": "2020-09-01",
+                      "amount": 213.33
+                  }]
+              }
+          }]
       },
       "currency": "BRL",
       "status": "Current",

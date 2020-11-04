@@ -23,45 +23,28 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
     "interest_rate": "178.19",
     "issued_amount": "1000",
     "loan_schedule": {
-      "schedule": [
-        {
-          "date": "2020-08-06",
-          "rowno": "1",
-          "capital": 133.26,
-          "interest": 89,
-          "repayment": {
-            "total": 222.26,
-            "repaid": true,
-            "schedule_components": {
-              "capital": "principal",
-              "interest": "interest",
-              "capitalDebtInterest": "interest"
-            },
-            "payments": [
-              {
-                "date": "2020-08-05",
-                "total": 222.26,
-                "capital": 133.26,
-                "interest": 89,
-                "capitalDebtInterest": 0
-              }
-            ]
-          },
-          "capitalDebInterest": 0
+        "schedule_components": {
+            "capital": "principal",
+            "interest": "interest",
+            "capitalDebInterest": "interest"
         },
-        {
-          "date": "2020-09-08",
-          "rowno": "2",
-          "capital": 145.12,
-          "interest": 77.14,
-          "repayment": {
-            "total": 0,
-            "repaid": false,
-            "payments": []
-          },
-          "capitalDebInterest": 0
-        }
-      ]
+        "schedule": [{
+            "rowno": 1,
+            "date": "2020-09-03",
+            "schedule_components": {
+                "capital": 200.11,
+                "interest": 2.21,
+                "capitalDebInterest": 11.01
+            },
+            "repayment": {
+                "total": 213.33,
+                "repaid": true,
+                "payments": [{
+                    "date": "2020-09-01",
+                    "amount": 213.33
+                }]
+            }
+        }]
     },
     "repaid_amount": "133.26",
     "schedule_type": "INTEREST_ONLY",
