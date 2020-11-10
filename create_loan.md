@@ -91,10 +91,10 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `loan_id` | `string` | Your loan ID |,
-| `country` | `string` | Country Code (see [countries list](./classificators/countries.md) |,
-| `type` | `string` | Loan type  (see [loan types list](./classificators/loan_types.md) |,
-| `currency` | `string` | Currency  (see [currencies list](./classificators/currencies.md) |,
-| `status` | `string` | Loan Status  (see [loan statuses list](./classificators/loan_statuses.md) |,
+| `country` | `string` | Country Code (see [countries list](./classificators/countries.md)) |,
+| `type` | `string` | Loan type  (see [loan types list](./classificators/loan_types.md)) |,
+| `currency` | `string` | Currency  (see [currencies list](./classificators/currencies.md)) |,
+| `status` | `string` | Loan Status  (see [loan statuses list](./classificators/loan_statuses.md)) |,
 | `issued_date` | `date` | Issued date. Format: `Y-m-d` |,
 | `list_date` | `date` | List date. Format: `Y-m-d` |,
 | `issued_amount` | `numeric` | Issued amount |,
@@ -102,7 +102,7 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
 | `skin_in_the_game` | `numeric` | |,
 | `repaid_amount` | `numeric` | Repaid amount |,
 | `debt_amount` | `numeric` | Debit amount |,
-| `schedule_type` | `string` | Schedule Type  (see [schedule types list](./classificators/schedule_types.md) |,
+| `schedule_type` | `string` | Schedule Type  (see [schedule types list](./classificators/schedule_types.md)) |,
 | `interest_rate` | `numeric` | Interest rate |,
 | `apr` | `numeric` |  |,
 | `extendable_schedule` | `boolean` | |,
