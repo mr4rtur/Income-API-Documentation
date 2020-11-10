@@ -37,6 +37,11 @@ PATCH '/loans/update-schedule/[ID]?api_key=12345678901234567890123456789012'
 }
 ```
 
+
+**Required parameters**
+
+See [loan schedule description](./classificators/loan_schedule.md)
+
 ## Success response
 
 ```json
