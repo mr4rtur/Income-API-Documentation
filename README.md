@@ -20,7 +20,8 @@ API using REST architecture.
 * [Update loan Schedule](./update_loan_schedule.md)
 * [Buyback Loan](./buyback_loan.md)
 * [View Buyback Loans List](./buyback_loans_list.md)
-
+* [Post Bank Export data](./post_bank_export_data.md)
+* [Get Bank transaction list](./bank_transactions_list.md)
 
 ## Responses
 

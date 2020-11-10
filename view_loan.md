@@ -18,64 +18,89 @@ GET /loans/view/[ID]?api_key=12345678901234567890123456789012'
 
 ## Success response
 
+Attributes description - [create loan request](./create_loan.md)
+
 ```json
 {
   "success": true,
   "data": {
-    "income_loan_id": 100001,
-    "loan_id": 161791,
-    "type": "CAR",
+    "income_loan_id": 100014,
+    "loan_id": 243947,
+    "type": "SRT",
     "country": "",
     "schedule_type": "",
     "cashflow_type": "",
-    "interest_rate": "178.19000",
-    "apr": "219.900",
-    "skin_in_the_game": 20,
+    "interest_rate": "89.00000",
+    "apr": "576.460",
+    "skin_in_the_game": 4,
     "loan_schedule": {
-        "schedule_components": {
-            "capital": "principal",
-            "interest": "interest",
-            "capitalDebInterest": "interest"
+      "schedule": [
+        {
+          "date": "2020-11-06",
+          "rowno": 1,
+          "repayment": {
+            "total": 448.16,
+            "repaid": true,
+            "payments": [
+              {
+                "date": "2020-10-16",
+                "amount": 448.16
+              }
+            ]
+          },
+          "schedule_components": {
+            "capital": 132.28,
+            "interest": 315.88,
+            "capitalDebtInterest": 0
+          }
         },
-        "schedule": [{
-            "rowno": 1,
-            "date": "2020-09-03",
-            "schedule_components": {
-                "capital": 200.11,
-                "interest": 2.21,
-                "capitalDebInterest": 11.01
-            },
-            "repayment": {
-                "total": 213.33,
-                "repaid": true,
-                "payments": [{
-                    "date": "2020-09-01",
-                    "amount": 213.33
-                }]
-            }
-        }]
+        {
+          "date": "2020-12-07",
+          "rowno": 2,
+          "repayment": {
+            "total": 439.06,
+            "repaid": true,
+            "payments": [
+              {
+                "date": "2020-10-16",
+                "amount": 439.06
+              }
+            ]
+          },
+          "schedule_components": {
+            "capital": 151.99,
+            "interest": 287.07,
+            "capitalDebtInterest": 0
+          }
+        }
+      ],
+      "schedule_components": {
+        "capital": "principal",
+        "interest": "interest",
+        "capitalDebtInterest": "interest"
+      }
     },
     "currency": "BRL",
     "status": "Current",
-    "issued_date": "2020-07-06",
-    "list_datetime": "2020-10-19 15:39:10",
-    "issued_amount": "1000.00",
-    "list_amount": "16.70",
-    "repaid_amount": "133.26",
+    "issued_date": "2020-10-05",
+    "list_datetime": "2020-11-10 13:49:09",
+    "issued_amount": "2000.00",
+    "list_amount": "4.00",
+    "repaid_amount": "284.27",
     "debt_amount": "0.00",
     "extendable_schedule": 1,
-    "purpose": "Furniture",
+    "purpose": "Bills",
     "buyback_guarantee": 1,
-    "saldo": "13.00",
-    "remaining_principal": "21.00",
+    "saldo": "2001.56",
+    "remaining_principal": "1926.66",
     "paid_out_date": null,
-    "term_date": "2020-09-17",
-    "due_date": "2020-09-19",
-    "borrower_name": "test",
-    "period": 5,
-    "borrower_interest": "11.50000",
+    "term_date": "2021-07-06",
+    "due_date": "2020-12-07",
+    "borrower_name": "Male, 20y",
+    "period": 9,
+    "borrower_interest": "429.47000",
     "timezone": "America\/Fortaleza",
-    "created": "2020-10-19 15:39:10"
+    "created": "2020-11-10 13:49:09"
   }
 }
 ```

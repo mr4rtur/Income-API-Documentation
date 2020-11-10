@@ -46,33 +46,17 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `api_key` | `string` | **Required**. Your Income API key |
-| `loan_id` | `string` | **Required** Your loan ID |,
-| `country` | `string` | **Required** |,
-| `type` | `string` | **Required** |,
-| `currency` | `string` | **Required** |,
-| `status` | `string` | **Required** |,
-| `issued_date` | `date` | **Required** Format Y-m-d |,
-| `list_date` | `date` | **Required** Format Y-m-d |,
-| `issued_amount` | `numeric` | **Required** |,
-| `list_amount` | `numeric` | **Required** |,
-| `skin_in_the_game` | `numeric` | **Required** 0 - 100 |,
-| `repaid_amount` | `numeric` | **Required** |,
-| `debt_amount` | `numeric` | **Required** |,
-| `schedule_type` | `string` | **Required** |,
-| `interest_rate` | `numeric` | **Required** 0 - 100 |,
-| `apr` | `numeric` | **Required** |,
-| `extendable_schedule` | `boolean` | **Required** |,
-| `purpose` | `string` | **Required** |,
-| `buyback_guarantee` | `boolean` | **Required** |,
-| `saldo` | `numeric` | **Required** |,
-| `remaining_principal` | `numeric` | **Required** |,
-| `term_date` | `date` | **Required** Format Y-m-d |,
-| `due_date` | `date` | **Required** Format Y-m-d |,
-| `borrower_name` | `string` | **Required** |,
-| `period` | `numeric` | **Required** |,
-| `borrower_interest` | `numeric` | **Required** |,
-| `timezone` | `string` | **Required** |,
+| `transactions` | `array` | Transactions list |
+| `transactions.*.amount` | `numeric` | Transaction amount |,
+| `transactions.*.bankTransactionId` | `numeric` | Transaction ID from Bank |,
+| `transactions.*.event_uuid` | `numeric` | Event UUID (Received from Income) |,
+| `transactions.*.date` | `numeric` | Transaction date. Format: Ymd |,
+| `transactions.*.distribution` | `array` | Distribution data |,
+| `transactions.*.distribution.*.type` | `string` | Distribution type |,
+| `transactions.*.distribution.*.loan_id` | `numeric` | Loan ID |,
+| `transactions.*.distribution.*.loan_distribution` | `array` | Loan distributions list |,
+| `transactions.*.distribution.*.loan_distribution.interest` | `numeric` | Interest amount |,
+| `transactions.*.distribution.*.loan_distribution.monthly_fee` | `numeric` | Monthly fee amount |,
 
 ## Success response
 
@@ -80,8 +64,7 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
 {
   "success": true,
   "data": {
-    "message": "Loan listed",
-    "income_loan_id": 100001
+    "message": "Transactions imported"
   }
 }
 ```

@@ -9,48 +9,79 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
 ```json
 {
   "loan": {
-    "apr": "219.9",
-    "type": "SHORT",
+    "loan_id": "223947",
+    "apr": 576.46,
+    "type": "SRT",
+    "saldo": 2001.56,
+    "period": 9,
+    "status": "Current",
     "country": "BRA",
-    "loan_id": "161791",
-    "purpose": "Furniture",
+    "purpose": "Bills",
     "currency": "BRL",
+    "due_date": "2020-12-07",
     "timezone": "America/Fortaleza",
-    "list_date": "2020-09-30",
-    "debt_amount": "0",
-    "issued_date": "2020-07-06",
-    "list_amount": "16.7",
-    "interest_rate": "178.19",
-    "issued_amount": "1000",
-    "loan_schedule": {
-        "schedule_components": {
-            "capital": "principal",
-            "interest": "interest",
-            "capitalDebInterest": "interest"
-        },
-        "schedule": [{
-            "rowno": 1,
-            "date": "2020-09-03",
-            "schedule_components": {
-                "capital": 200.11,
-                "interest": 2.21,
-                "capitalDebInterest": 11.01
-            },
-            "repayment": {
-                "total": 213.33,
-                "repaid": true,
-                "payments": [{
-                    "date": "2020-09-01",
-                    "amount": 213.33
-                }]
-            }
-        }]
-    },
-    "repaid_amount": "133.26",
-    "schedule_type": "INTEREST_ONLY",
-    "skin_in_the_game": "20",
+    "list_date": "2020-11-06",
+    "term_date": "2021-07-06",
+    "debt_amount": 0,
+    "issued_date": "2020-10-05",
+    "list_amount": 4,
+    "borrower_name": "Male, 20y",
+    "interest_rate": 89,
+    "issued_amount": 2000,
+    "repaid_amount": 284.27,
+    "schedule_type": "FULL",
+    "skin_in_the_game": 4,
+    "borrower_interest": 429.47,
     "buyback_guarantee": true,
-    "extendable_schedule": true
+    "extendable_schedule": true,
+    "remaining_principal": 1926.66,
+    "loan_schedule": {
+      "schedule": [
+        {
+          "date": "2020-11-06",
+          "rowno": 1,
+          "repayment": {
+            "total": 448.16,
+            "repaid": true,
+            "payments": [
+              {
+                "date": "2020-10-16",
+                "amount": 448.16
+              }
+            ]
+          },
+          "schedule_components": {
+            "capital": 132.28,
+            "interest": 315.88,
+            "capitalDebtInterest": 0
+          }
+        },
+        {
+          "date": "2020-12-07",
+          "rowno": 2,
+          "repayment": {
+            "total": 439.06,
+            "repaid": true,
+            "payments": [
+              {
+                "date": "2020-10-16",
+                "amount": 439.06
+              }
+            ]
+          },
+          "schedule_components": {
+            "capital": 151.99,
+            "interest": 287.07,
+            "capitalDebtInterest": 0
+          }
+        }
+      ],
+      "schedule_components": {
+        "capital": "principal",
+        "interest": "interest",
+        "capitalDebtInterest": "interest"
+      }
+    }
   }
 }
 ```
@@ -59,33 +90,33 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `api_key` | `string` | **Required**. Your Income API key |
-| `loan_id` | `string` | **Required** Your loan ID |,
-| `country` | `string` | **Required** |,
-| `type` | `string` | **Required** |,
-| `currency` | `string` | **Required** |,
-| `status` | `string` | **Required** |,
-| `issued_date` | `date` | **Required** Format Y-m-d |,
-| `list_date` | `date` | **Required** Format Y-m-d |,
-| `issued_amount` | `numeric` | **Required** |,
-| `list_amount` | `numeric` | **Required** |,
-| `skin_in_the_game` | `numeric` | **Required** 0 - 100 |,
-| `repaid_amount` | `numeric` | **Required** |,
-| `debt_amount` | `numeric` | **Required** |,
-| `schedule_type` | `string` | **Required** |,
-| `interest_rate` | `numeric` | **Required** 0 - 100 |,
-| `apr` | `numeric` | **Required** |,
-| `extendable_schedule` | `boolean` | **Required** |,
-| `purpose` | `string` | **Required** |,
-| `buyback_guarantee` | `boolean` | **Required** |,
-| `saldo` | `numeric` | **Required** |,
-| `remaining_principal` | `numeric` | **Required** |,
-| `term_date` | `date` | **Required** Format Y-m-d |,
-| `due_date` | `date` | **Required** Format Y-m-d |,
-| `borrower_name` | `string` | **Required** |,
-| `period` | `numeric` | **Required** |,
-| `borrower_interest` | `numeric` | **Required** |,
-| `timezone` | `string` | **Required** |,
+| `loan_id` | `string` | Your loan ID |,
+| `country` | `string` | Country Code (see [countries list](./classificators/countries.md) |,
+| `type` | `string` | Loan type  (see [loan types list](./classificators/loan_types.md) |,
+| `currency` | `string` | Currency  (see [currencies list](./classificators/currencies.md) |,
+| `status` | `string` | Loan Status  (see [loan statuses list](./classificators/loan_statuses.md) |,
+| `issued_date` | `date` | Issued date. Format: `Y-m-d` |,
+| `list_date` | `date` | List date. Format: `Y-m-d` |,
+| `issued_amount` | `numeric` | Issued amount |,
+| `list_amount` | `numeric` | List amount |,
+| `skin_in_the_game` | `numeric` | |,
+| `repaid_amount` | `numeric` | Repaid amount |,
+| `debt_amount` | `numeric` | Debit amount |,
+| `schedule_type` | `string` | Schedule Type  (see [schedule types list](./classificators/schedule_types.md) |,
+| `interest_rate` | `numeric` | Interest rate |,
+| `apr` | `numeric` |  |,
+| `extendable_schedule` | `boolean` | |,
+| `purpose` | `string` | |,
+| `buyback_guarantee` | `boolean` | Guarantee for buyback |,
+| `saldo` | `numeric` | Saldo |,
+| `remaining_principal` | `numeric` | |,
+| `term_date` | `date` | Term date. Format: `Y-m-d` |,
+| `due_date` | `date` | Due Date. Format: `Y-m-d` |,
+| `borrower_name` | `string` | |,
+| `period` | `numeric` | |,
+| `borrower_interest` | `numeric` | |,
+| `loan_schedule` | `array` | See [loan schedule description](./classificators/loan_schedule.md) |,
+| `timezone` | `string` | Loan Timezone |,
 
 ## Success response
 
