@@ -25,6 +25,34 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
                 "monthly_fee": 10,
                 "principal": 246.12
               },
+              "loan_schedule": {
+                  "schedule": [
+                    {
+                      "date": "2020-11-06",
+                      "rowno": 1,
+                      "repayment": {
+                        "total": 448.16,
+                        "repaid": true,
+                        "payments": [
+                          {
+                            "date": "2020-10-16",
+                            "amount": 448.16
+                          }
+                        ]
+                      },
+                      "schedule_components": {
+                        "capital": 132.28,
+                        "interest": 315.88,
+                        "capitalDebtInterest": 0
+                      }
+                    }
+                  ],
+                  "schedule_components": {
+                    "capital": "principal",
+                    "interest": "interest",
+                    "capitalDebtInterest": "interest"
+                  }
+               },
               "loan_id": 100001,
               "type": "borrower repayment"
             }
