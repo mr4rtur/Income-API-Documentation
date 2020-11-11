@@ -82,6 +82,7 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
 | `transactions.*.distribution` | `array` | Distribution data |,
 | `transactions.*.distribution.*.type` | `string` | Distribution type |,
 | `transactions.*.distribution.*.loan_id` | `numeric` | Loan ID |,
+| `transactions.*.distribution.*.loan_schedule` | `array` | See [loan schedule description](./classificators/loan_schedule.md) |,
 | `transactions.*.distribution.*.loan_distribution` | `array` | Loan distributions list |,
 | `transactions.*.distribution.*.loan_distribution.interest` | `numeric` | Interest amount |,
 | `transactions.*.distribution.*.loan_distribution.monthly_fee` | `numeric` | Monthly fee amount |,
