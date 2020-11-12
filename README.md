@@ -16,6 +16,7 @@ API using REST architecture.
 
 * [Create Loan](./create_loan.md)
 * [View Loan](./view_loan.md)
+* [View Loan Investments](./view_loan_investments.md)
 * [Loans List](./loans_list.md)
 * [Update loan Schedule](./update_loan_schedule.md)
 * [Buyback Loan](./buyback_loan.md)
