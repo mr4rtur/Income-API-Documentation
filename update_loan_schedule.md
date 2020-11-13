@@ -11,28 +11,32 @@ PATCH '/loans/update-schedule/[ID]?api_key=12345678901234567890123456789012'
 ```json
 {
   "loan_schedule": {
-      "schedule_components": {
-          "capital": "principal",
-          "interest": "interest",
-          "capitalDebInterest": "interest"
-      },
-      "schedule": [{
-          "rowno": 1,
-          "date": "2020-09-03",
-          "schedule_components": {
-              "capital": 200.11,
-              "interest": 2.21,
-              "capitalDebInterest": 11.01
-          },
-          "repayment": {
-              "total": 213.33,
-              "repaid": true,
-              "payments": [{
-                  "date": "2020-09-01",
-                  "amount": 213.33
-              }]
-          }
-      }]
+     "schedule": [
+       {
+         "date": "2020-11-06",
+         "rowno": 1,
+         "repayment": {
+           "total": 448.16,
+           "repaid": true,
+           "payments": [
+             {
+               "date": "2020-10-16",
+               "amount": 448.16
+             }
+           ]
+         },
+         "schedule_components": {
+           "capital": 132.28,
+           "interest": 315.88,
+           "capitalDebtInterest": 0
+         }
+       }
+     ],
+     "schedule_components": {
+       "capital": "principal",
+       "interest": "interest",
+       "capitalDebtInterest": "interest"
+     }
   }
 }
 ```
