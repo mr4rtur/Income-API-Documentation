@@ -1,6 +1,6 @@
 # View Loan Investments
 
-`[ID]` - you can use your `loan_id` or `income_loan_id`
+`[ID]` - you can use your `loan_id` or `income_loan_ref`
 
 ```http
 GET /loans/investment/[ID]?api_key=12345678901234567890123456789012'

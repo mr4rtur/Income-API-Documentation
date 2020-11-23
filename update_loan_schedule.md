@@ -1,6 +1,6 @@
 # Update loan Schedule
 
-`[ID]` - you can use your `loan_id` or `income_loan_id`
+`[ID]` - you can use your `loan_id` or `income_loan_ref`
 
 ```http
 PATCH '/loans/update-schedule/[ID]?api_key=12345678901234567890123456789012'

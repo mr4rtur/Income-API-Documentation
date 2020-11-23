@@ -125,7 +125,7 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
   "success": true,
   "data": {
     "message": "Loan listed",
-    "income_loan_id": 100001
+    "income_loan_ref": 100001
   }
 }
 ```
