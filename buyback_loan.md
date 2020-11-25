@@ -8,7 +8,7 @@ POST '/loans/buyback?api_key=12345678901234567890123456789012'
 
 ```json
 {
-    "loan_id": 100040,
+    "income_loan_ref": 100040,
     "reason": "Borrower paid back"
 }
 ```

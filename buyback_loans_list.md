@@ -14,14 +14,12 @@ GET /loans/buyback?api_key=12345678901234567890123456789012&date_from=2019-01-01
   "success": true,
   "data": [
     {
-      "loan_id": 161791,
-      "income_loan_ref": 100001,
+      "income_loan_ref": 161791,
       "reason": "Borrower paid back",
       "amount": 100,
       "intrest_amount": 100
     },
     {
-      "loan_id": 161791,
       "income_loan_ref": 100002,
       "reason": "Borrower paid back",
       "amount": 98,
