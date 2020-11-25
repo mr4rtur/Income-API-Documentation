@@ -44,7 +44,8 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
                         "capital": 132.28,
                         "interest": 315.88,
                         "capitalDebtInterest": 0
-                      }
+                      },
+                      "prepayment_amount": 0
                     }
                   ],
                   "schedule_components": {
@@ -86,6 +87,8 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
 | `transactions.*.distribution.*.loan_distribution` | `array` | Loan distributions list |,
 | `transactions.*.distribution.*.loan_distribution.interest` | `numeric` | Interest amount |,
 | `transactions.*.distribution.*.loan_distribution.monthly_fee` | `numeric` | Monthly fee amount |,
+
+**Note:** If `loan_schedule` have `prepayment_amount` - `schedule` and `schedule_components` is not required.
 
 ## Success response
 
