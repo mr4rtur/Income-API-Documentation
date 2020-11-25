@@ -1,9 +1,7 @@
 # View Loan Investments
 
-`[ID]` - you can use your `loan_id` or `income_loan_ref`
-
 ```http
-GET /loans/investment/[ID]?api_key=12345678901234567890123456789012'
+GET /loans/investment/[INCOME_LOAN_REF]?api_key=12345678901234567890123456789012'
 ```
 
 ## Error response
@@ -25,7 +23,7 @@ GET /loans/investment/[ID]?api_key=12345678901234567890123456789012'
     {
       "investment_id": 101,
       "investor_id": 1,
-      "loan_id": 100001,
+      "income_loan_ref": 100001,
       "loan_originator_id": 54,
       "investment_is_active": null,
       "investment_invest_amount": "20.00",
