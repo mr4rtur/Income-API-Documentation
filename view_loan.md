@@ -1,6 +1,6 @@
 # View Loan
 
-`[ID]` - you can use your `loan_id` or `income_loan_id`
+`[ID]` - you can use your `loan_id` or `income_loan_ref`
 
 ```http
 GET /loans/view/[ID]?api_key=12345678901234567890123456789012'
@@ -24,7 +24,7 @@ Attributes description - [create loan request](./create_loan.md)
 {
   "success": true,
   "data": {
-    "income_loan_id": 100014,
+    "income_loan_ref": 100014,
     "loan_id": 243947,
     "type": "SRT",
     "country": "",
