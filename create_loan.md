@@ -94,7 +94,7 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
 | `status` | `string` | Loan Status  (see [loan statuses list](./classificators/loan_statuses.md)) |,
 | `issued_date` | `date` | Issued date. Format: `Y-m-d`. Loan original issuance to Borrower. |,
 | `list_date` | `date` | Loan listing date to the platform. Format: `Y-m-d`.  |,
-| `issued_amount` | `numeric` | Amount issued to the Borrower- |,
+| `issued_amount` | `numeric` | Amount issued to the Borrower. |,
 | `remaining_principal` | `numeric` | Principal balance during loan listing. |,
 | `skin_in_the_game` | `numeric` | Skin In The Game %. Percentage of the principal whichi no investment can be made. Percentage range is agreed with Loan Originator in the contract. |,
 | `repaid_amount` | `numeric` | Repaid amount until listing moment. |,
