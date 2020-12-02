@@ -10,13 +10,12 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
 {
   "bankExportData": [
     {
-      "account": "109203920394",
       "transactions": [
         {
           "event_uuid": "2020102713534749764900-cd7eac39-4241-4d19-92c1-46f6fbae68e0",
           "amount": 331.22,
           "bankTransactionId": "1234567890",
-          "date": 20201001,
+          "transaction_date": "2020-10-01",
           "distribution": [
             {
               "amount": 300.22,
@@ -79,7 +78,7 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
 | `transactions.*.amount` | `numeric` | Transaction amount |,
 | `transactions.*.bankTransactionId` | `numeric` | Transaction ID from Bank |,
 | `transactions.*.event_uuid` | `numeric` | Event UUID (Received from Income) |,
-| `transactions.*.date` | `numeric` | Transaction date. Format: Ymd |,
+| `transactions.*.transaction_date` | `numeric` | Transaction date. Format: `Y-m-d` |,
 | `transactions.*.distribution` | `array` | Distribution data |,
 | `transactions.*.distribution.*.type` | `string` | Distribution type |,
 | `transactions.*.distribution.*.income_loan_ref` | `numeric` | Loan ID |,
