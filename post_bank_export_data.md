@@ -53,7 +53,6 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
                     "capitalDebtInterest": "interest"
                   }
                },
-              "income_loan_ref": 100001,
               "type": "borrower repayment"
             }
           ],
