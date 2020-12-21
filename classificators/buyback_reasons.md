@@ -1,7 +1,7 @@
 | Code | Reason |    
 | :--- | :--- |  
-| repaid | Borrower repaid the loan |
-| extension | Borrower asked for extension |
-| noNeedFin | Financing not needed anymore by LO |
-| schedule | Loan schedule changed beyond allowed parameters |
+| Repaid | Borrower repaid the loan |
+| Extension | Borrower asked for extension |
+| Schedule | Loan schedule changed beyond allowed parameters |
+| NoNeedFin | Financing not needed anymore by LO |
 | Other | Other reasons not listed above |
