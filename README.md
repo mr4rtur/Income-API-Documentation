@@ -51,3 +51,6 @@ Many API endpoints returns a JSON response in the following format:
   "status_code": 422
 }
 ```
+
+# Postback
+System can notify LO on events happening in Income side: [postback to LO](./postback.md)
