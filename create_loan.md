@@ -14,7 +14,7 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
     "type": "SRT",
     "period": 9,
     "status": "Current",
-    "country": "BRA",
+    "country": "BR",
     "purpose": "Bills",
     "currency": "BRL",
     "due_date": "2020-12-07",
