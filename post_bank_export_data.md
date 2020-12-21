@@ -22,7 +22,7 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
               "loan_distribution": {
                 "interest": 44.1,
                 "monthly_fee": 10,
-                "principal": 246.12
+                "capital": 246.12
               },
               "loan_schedule": {
                   "schedule": [
@@ -50,7 +50,8 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
                   "schedule_components": {
                     "capital": "principal",
                     "interest": "interest",
-                    "capitalDebtInterest": "interest"
+                    "capitalDebtInterest": "interest",
+                    "monthly_fee": "interest"
                   }
                },
               "income_loan_ref": 100001,
