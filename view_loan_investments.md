@@ -1,7 +1,12 @@
 # View Loan Investments
 
+Show all loan investments
 ```http
-GET /loans/investment/[INCOME_LOAN_REF]?api_key=12345678901234567890123456789012'
+GET /loans/investment/[INCOME_LOAN_REF]?api_key=12345678901234567890123456789012{}'
+```
+Show only specific investment
+```http
+GET /loans/investment/[INCOME_LOAN_REF]/[INVESTMENT_ID]?api_key=12345678901234567890123456789012{}'
 ```
 
 ## Error response
