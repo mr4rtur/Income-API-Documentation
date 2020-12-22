@@ -9,7 +9,7 @@ GET /loans/bank-transfer?api_key=12345678901234567890123456789012&date_from=2019
 
 Show bank transactions by `event_uuid`:
 ```http
-GET /loans/bank-transfer?api_key=12345678901234567890123456789012&event_uuid=2020120411351804896600-1aebddec-0402-4e59-988b-038213edc23c
+GET /loans/bank-transfer?api_key=12345678901234567890123456789012&date_from=2019-01-01&date_to=2020-12-12&event_uuid=2020120411351804896600-1aebddec-0402-4e59-988b-038213edc23c
 ```
 
 ## Success response
