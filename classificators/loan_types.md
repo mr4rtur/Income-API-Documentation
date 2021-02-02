@@ -2,5 +2,4 @@
 | :---: | :--- |  
 | AGR | Agricultural |  
 | CAR | Car |  
-| PYD | Payday |  
 | SRT | Short loan |
