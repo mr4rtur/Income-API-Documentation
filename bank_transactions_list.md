@@ -23,7 +23,7 @@ GET /loans/bank-transfer?api_key=12345678901234567890123456789012&date_from=2019
       "amount": 20385.92,
       "description": "LIQUIDACAO DE COBRANCA Valor Disponivel",
       "currency": "BRL",
-      "transaction_date": "2020-12-01",
+      "date": "2020-12-01",
       "bankTransactionId": "4006026"
     },
     {
@@ -31,7 +31,7 @@ GET /loans/bank-transfer?api_key=12345678901234567890123456789012&date_from=2019
       "amount": 387.86,
       "description": "DOC CREDITO AUTOMATICO* SANDRA RIBEIRO",
       "currency": "EUR",
-      "transaction_date": "2020-12-01",
+      "date": "2020-12-01",
       "bankTransactionId": "743231"
     }
   ]
