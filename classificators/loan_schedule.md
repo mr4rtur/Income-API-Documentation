@@ -60,6 +60,6 @@
 | `schedule.*.repayment.total` | `numeric` | Repayment total amount |,
 | `schedule.*.repayment.repaid` | `boolean` | Repayment repaid (`true`/`false`) |,
 | `schedule.*.repayment.schedule_components` | `boolean` | Repayment schedule components amounts |,
-| `schedule.*.repayment.payments` | `array` | Payments info |,
+| `schedule.*.repayment.payments` | `array` | Payments info, required only if repaid: true |,
 | `schedule.*.repayment.payments.*.date` | `date` | Payment date. Format: `Y-m-d` |,
 | `schedule.*.repayment.payments.*.amount` | `numeric` | Payment amount |,
