@@ -1,8 +1,10 @@
 | Code | Loan Type |    
 | :---: | :--- |  
 | AGR | Agricultural |  
-| CAR | Car |  
-| SRT | Short-term loan |
 | BIZ | Business loan |
+| CAR | Car |  
+| INS | Installment loan |
+| PYD | Payday loan |
 | SEC | Secured loan |
+| SRT | Short-term loan |
 
