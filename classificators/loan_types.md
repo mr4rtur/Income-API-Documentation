@@ -3,7 +3,7 @@
 | AGR | Agricultural |  
 | BIZ | Business loan |
 | CAR | Car |  
-| INS | Installment loan |
+| INS | Instalment loan |
 | PYD | Payday loan |
 | SEC | Secured loan |
 | SRT | Short-term loan |
