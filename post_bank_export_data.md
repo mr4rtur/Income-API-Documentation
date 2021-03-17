@@ -77,7 +77,7 @@ POST '/loans/bank-transfer?api_key=12345678901234567890123456789012'
 | :--- | :--- | :--- |
 | `transactions` | `array` | Transactions list |
 | `transactions.*.amount` | `numeric` | Transaction amount |,
-| `transactions.*.bankTransactionId` | `string` | Transaction ID from Bank |,
+| `transactions.*.bankTransactionId` | `string` | Transaction ID from Bank (can be empty)|,
 | `transactions.*.event_uuid` | `numeric` | Event UUID (Received from Income) |,
 | `transactions.*.transaction_date` | `numeric` | Transaction date. Format: `Y-m-d` |,
 | `transactions.*.distribution` | `array` | Distribution data |,
