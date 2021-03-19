@@ -32,6 +32,14 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
     "buyback_guarantee": true,
     "extendable_schedule": true,
     "remaining_principal": 1926.66,
+    "extension_count": 1,
+    "loan_score": 999.99,
+    "loan_sequence": 1,
+    "third_party_guarantee": true,
+    "guarantee_percentage": 10.5,
+    "guarantee_basis_for_percentage": "issued principal",
+    "guarantee_amount": 500,
+    "insurance": true,
     "loan_schedule": {
       "schedule": [
         {
