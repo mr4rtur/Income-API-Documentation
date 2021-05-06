@@ -110,6 +110,7 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
 | `investor_interest_rate` | `numeric` | Interest rate offered to Investros by Loan Originator. Between 0 and 9999. |,
 | `apr` | `numeric` | Loan Annual Percentage Rate based on 365-day year. Between 0 and 9999999. |,
 | `extendable_schedule` | `boolean` | Mark 'true' if Borrower contract allows extending of the schedule, 'false' if not allowed. |,
+| `extension_count` | `numeric` | Has to be set if `extendable_schedule` is true. How many times loan can be extended. If LO has loan settings then this number may get limited  |,
 | `purpose` | `string` | Purpose of the loan in short (up to 255 chars). |,
 | `buyback_guarantee` | `boolean` | Guarantee for buyback. Mark 'true' if Loan Originator will buy back investments when loans goes over 60 DPD (Days Past Due). |,
 | `due_date` | `date` | Loan Due Date. Format: `Y-m-d` |,
