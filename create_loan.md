@@ -30,6 +30,7 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
     "borrower_interest": 89.47,
     "buyback_guarantee": true,
     "extendable_schedule": true,
+    "extension_count": 3,
     "remaining_principal": 1926.66,
     "extension_count": 1,
     "loan_score": 999.99,
