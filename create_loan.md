@@ -32,7 +32,6 @@ POST '/loans/store?api_key=12345678901234567890123456789012'
     "extendable_schedule": true,
     "extension_count": 3,
     "remaining_principal": 1926.66,
-    "extension_count": 1,
     "loan_score": 999.99,
     "loan_sequence": 1,
     "third_party_guarantee": true,
